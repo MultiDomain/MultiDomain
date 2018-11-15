@@ -1,36 +1,62 @@
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
+import java.util.concurrent.TimeUnit;
+
+
 public class headlessBeowser {
     public static void main(String[] args) {
 
-        String os = System.getProperty("os.name").toLowerCase();
+        java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+        java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
 
-        if (os.contains("mac")) {
-            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Mac/chromedriver");
-        } else if (os.contains("windows")) {
-            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Windows/chromedriver.exe");
-        } else {
-            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Linux/chromedriverlx");
-        }
+
+//        String os = System.getProperty("os.name").toLowerCase();
+//
+//        if (os.contains("mac")) {
+//            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Mac/chromedriver");
+//        } else if (os.contains("windows")) {
+//            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Windows/chromedriver.exe");
+//        } else {
+//            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Linux/chromedriver");
+//        }
 
         HtmlUnitDriver unitDriver = new HtmlUnitDriver();
-        unitDriver.get("http://google.com");
+        unitDriver.setJavascriptEnabled(true);
 
-        System.out.println("Title of the page is -> " + unitDriver.getTitle());
+        try {
 
-        WebElement searchBox = unitDriver.findElement(By.name("q"));
+            unitDriver.get("http://google.com");
 
-        searchBox.sendKeys("Selenium");
+            System.out.println("Title of the page is -> " + unitDriver.getTitle());
 
-        WebElement button = unitDriver.findElement(By.name("btnK"));
+            WebElement searchBox = unitDriver.findElement(By.name("q"));
 
-        button.click();
+            searchBox.sendKeys("Selenium", Keys.ENTER);
 
-        System.out.println("Title of the page is -> " + unitDriver.getTitle());
+
+
+//            WebElement button = unitDriver.findElement(By.name("btnK"));
+//
+//            button.click();
+
+            System.out.println("Title of the page is -> " + unitDriver.getTitle());
+
+            String title = (String) unitDriver.executeAsyncScript("return document.title");
+
+        }
+        catch (Exception ex){
+            System.out.println("Test Failed");
+        }finally {
+            unitDriver.manage().deleteAllCookies();
+            unitDriver.close();
+            unitDriver.quit();
+        }
 
     }
 
