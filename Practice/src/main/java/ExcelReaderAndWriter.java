@@ -45,9 +45,10 @@ public class ExcelReaderAndWriter {
 
         File file1 = new File("Generic/ExcelFiles/execl2007.xlsx");
         FileInputStream fileInputStream1 = new FileInputStream(file1);
-        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
-        XSSFSheet sheet = workbook.getSheetAt(0);
-        sheet.getRow(0).createCell(0).setCellValue("This is entered by java");
+
+//        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
+//        XSSFSheet sheet = workbook.getSheetAt(0);
+//        sheet.getRow(0).createCell(0).setCellValue("This is entered by java");
 
 
 
