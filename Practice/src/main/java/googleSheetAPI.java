@@ -21,7 +21,7 @@ public class googleSheetAPI {
     Credential credential() throws IOException {
       JacksonFactory jsonfactory = JacksonFactory.getDefaultInstance();
 
-        List<String> scope = Arrays.asList(SheetsScopes.);
+        List<String> scope = Arrays.asList(SheetsScopes);
         try {
           HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
 
