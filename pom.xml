@@ -45,6 +45,13 @@
                 <artifactId>google-api-client</artifactId>
                 <version>1.22.0</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client -->
+            <dependency>
+                <groupId>com.google.oauth-client</groupId>
+                <artifactId>google-oauth-client</artifactId>
+                <version>1.23.0</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.google.apis</groupId>
                 <artifactId>google-api-services-sheets</artifactId>
