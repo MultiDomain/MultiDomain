@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2864ff4d-ad32-49b3-afb8-92a387c0aefc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2864ff4d-ad32-49b3-afb8-92a387c0aefc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -87,7 +84,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="152" />
     <option name="width" value="691" />
     <option name="height" value="743" />
@@ -222,8 +219,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="152" y="0" width="691" height="743" extended-state="0" />
-    <editor active="true" />
+    <frame x="152" y="0" width="691" height="743" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21216848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
