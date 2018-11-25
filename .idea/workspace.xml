@@ -206,8 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,66 +218,12 @@
               <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="tokens" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,19 +231,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PageObjectModelFramework" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sunsh\Documents\MultiDomain\.idea" />
+      <recent name="C:\Users\sunsh\Documents\MultiDomain\Generic\target" />
+      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\src\main\resources" />
+      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\target" />
+      <recent name="$PROJECT_DIR$/Generic/Drivers/Chrome/Windows" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sunsh\Documents\MultiDomain\Generic\Drivers\Windows" />
       <recent name="$PROJECT_DIR$/Generic/Drivers/Mac" />
       <recent name="$PROJECT_DIR$/Generic/Drivers/Windows" />
       <recent name="$PROJECT_DIR$/Generic/Drivers/Linux" />
       <recent name="$PROJECT_DIR$/Generic/Drivers/Linux/Chrome" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Generic\target" />
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\src\main\resources" />
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\target" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Chrome/Windows" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Chrome/Mac" />
     </key>
   </component>
   <component name="RunDashboard">
