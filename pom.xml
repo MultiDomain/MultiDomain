@@ -40,8 +40,7 @@
                 <artifactId>poi-ooxml</artifactId>
                 <version>3.17</version>
             </dependency>
-
-<!--Google API -->
+            <!--Google Sheets API-->
             <dependency>
                 <groupId>com.google.api-client</groupId>
                 <artifactId>google-api-client</artifactId>

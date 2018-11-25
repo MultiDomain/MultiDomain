@@ -28,7 +28,6 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
@@ -41,7 +40,6 @@
             <groupId>com.google.apis</groupId>
             <artifactId>google-api-services-sheets</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>

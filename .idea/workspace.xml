@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2864ff4d-ad32-49b3-afb8-92a387c0aefc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Generic/GoogleAPI/client_secret.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/GoogleAPI/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/src/main/resources/client_secret.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice/src/main/resources/credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/src/main/java/googleSheetAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +27,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="46" column="115" selection-start-line="46" selection-start-column="115" selection-end-line="46" selection-end-column="115" />
+            <state relative-caret-position="345">
+              <caret line="43" column="106" lean-forward="true" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0;class#SheetsQuickstart#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +54,6 @@
       <list>
         <option value="$PROJECT_DIR$/Practice/pom.xml" />
         <option value="$PROJECT_DIR$/Practice/src/main/java/Practice.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Practice/src/main/java/HeadlessChromeOptions.java" />
         <option value="$PROJECT_DIR$/Practice/src/main/java/HeadlessFirefoxOprion.java" />
@@ -62,32 +63,16 @@
         <option value="$PROJECT_DIR$/Practice/src/main/java/googleSheetAPI.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Generic/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" />
       </list>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="MultiDomain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="MultiDomain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="743" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="559" />
+    <option name="y" value="44" />
+    <option name="width" value="677" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,24 +146,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543096162598" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/PageObjectModelFramework" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Generic\Drivers\Windows" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Mac" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Windows" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Linux" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Linux/Chrome" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Practice/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Generic/GoogleAPI" />
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\target" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Chrome/Windows" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Chrome/Mac" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543132460738" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -242,8 +210,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1370" height="745" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35075757" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.35075757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -304,13 +273,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4114">
-          <caret line="256" selection-start-line="256" selection-end-line="256" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Practice/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -422,98 +384,23 @@
     <entry file="file://$PROJECT_DIR$/Practice/src/main/resources/client_secret.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="46" column="115" selection-start-line="46" selection-start-column="115" selection-end-line="46" selection-end-column="115" />
+        <state relative-caret-position="320">
+          <caret line="255" selection-start-line="255" selection-end-line="255" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>MultiDomain</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.aventstack:extentreports:3.0.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="43" column="106" lean-forward="true" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0;class#SheetsQuickstart#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
