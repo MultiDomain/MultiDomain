@@ -30,7 +30,11 @@ public class SheetsQuickstart {
      */
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
-    // Specify The credencial using json file created in google Sheet API site and saved under 'Practice/src/main/resources/credentials.json'
+
+    /** Specify The credencial using json file
+     * created in google Sheet API site and saved under
+     * 'Practice/src/main/resources/credentials.json'
+     */
 
     /**
      * Creates an authorized Credential object.
