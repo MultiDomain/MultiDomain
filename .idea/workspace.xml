@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2864ff4d-ad32-49b3-afb8-92a387c0aefc" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/Practice/src/main/resources/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
+      <change beforePath="$PROJECT_DIR$/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
     <ignored path="$PROJECT_DIR$/Practice/target/" />
@@ -24,90 +16,103 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="1400467787">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.31" value="1" />
-          <entry key="project.open.time.60" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="StoredCredential" value="1" />
-          <entry key="class" value="2" />
-          <entry key="gitignore" value="3" />
-          <entry key="java" value="2" />
-          <entry key="json" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="class" value="1" />
+          <entry key="java" value="8" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="2" />
-          <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="2" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="109" />
-          <entry key="xml" value="32" />
+          <entry key="java" value="1466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="109" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="32" />
+          <entry key="JAVA" value="1466" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
-=======
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="391">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="182">
+              <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;field#SCOPES#0;class#SheetsQuickstart#0" />
                 <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0" />
-=======
-            <state relative-caret-position="345">
-              <caret line="43" column="106" lean-forward="true" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0;class#SheetsQuickstart#0" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="4788" column="26" selection-start-line="4788" selection-start-column="26" selection-end-line="4788" selection-end-column="26" />
+              <folding>
+                <element signature="e#186747#186748#0" expanded="true" />
+                <element signature="e#186792#186793#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SpreadsheetSnippets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#batchUpdate#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#getValues#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#batchGetValues#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#updateValues#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#batchUpdateValues#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#appendValues#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#pivotTables#0;class#SpreadsheetSnippets#0" />
+                <element signature="method#conditionalFormat#0;class#SpreadsheetSnippets#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar!/com/google/api/client/http/javanet/NetHttpTransport.class">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/Generic/target/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -158,8 +163,6 @@
           </provider>
         </entry>
       </file>
-=======
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -175,28 +178,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Practice/pom.xml" />
-        <option value="$PROJECT_DIR$/Practice/src/main/java/Practice.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Practice/src/main/java/HeadlessChromeOptions.java" />
-        <option value="$PROJECT_DIR$/Practice/src/main/java/HeadlessFirefoxOprion.java" />
-        <option value="$PROJECT_DIR$/Generic/target/.gitignore" />
-        <option value="$PROJECT_DIR$/Practice/src/main/java/ExcelReaderAndWriter.java" />
-        <option value="$PROJECT_DIR$/Practice/src/main/java/googleSheetAPI.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Generic/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/Practice/src/main/java/SpreadsheetSnippets.java" />
         <option value="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" />
-        <option value="$PROJECT_DIR$/Practice/target/.gitignore" />
-        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="559" />
-    <option name="y" value="44" />
-    <option name="width" value="677" />
-    <option name="height" value="741" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="152" />
+    <option name="width" value="691" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,19 +208,6 @@
               <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-<<<<<<< HEAD
-=======
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="GoogleAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
@@ -258,43 +238,16 @@
             <path>
               <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="tokens" type="462c0819:PsiDirectoryNode" />
             </path>
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543115044191" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PageObjectModelFramework" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\.idea" />
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Generic\target" />
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\src\main\resources" />
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Practice\target" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Chrome/Windows" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sunsh\Documents\MultiDomain\Generic\Drivers\Windows" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Mac" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Windows" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Linux" />
-      <recent name="$PROJECT_DIR$/Generic/Drivers/Linux/Chrome" />
-    </key>
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543132460738" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543286153684" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -308,21 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SheetsQuickstart">
-    <configuration name="ExcelReaderAndWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExcelReaderAndWriter" />
-      <module name="Practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeadlessFirefoxOprion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HeadlessFirefoxOprion" />
-      <module name="Practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="SheetsQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SheetsQuickstart" />
       <module name="Practice" />
@@ -330,16 +269,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.ExcelReaderAndWriter" />
-      <item itemvalue="Application.HeadlessFirefoxOprion" />
-      <item itemvalue="Application.SheetsQuickstart" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SheetsQuickstart" />
-        <item itemvalue="Application.ExcelReaderAndWriter" />
-        <item itemvalue="Application.HeadlessFirefoxOprion" />
       </list>
     </recent_temporary>
   </component>
@@ -357,14 +289,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1370" height="745" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
-=======
-      <window_info content_ui="combo" id="Project" order="0" weight="0.35075757" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
+      <window_info content_ui="combo" id="Project" order="0" weight="0.46310833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -373,12 +301,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.36187398" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.5652174" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49848485" visible="true" weight="0.3236715" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49848485" weight="0.3236715" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50151515" side_tool="true" weight="0.32419354" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3268921" />
@@ -390,40 +318,12 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Mongo Explorer" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.23939393" />
-      <window_info anchor="right" id="Maven" order="9" weight="0.2530303" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.23903178" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Practice/src/main/java/ExcelReaderAndWriter.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-<<<<<<< HEAD
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java</url>
-          <line>40</line>
-          <properties class="SheetsQuickstart" method="getCredentials">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java</url>
-          <line>59</line>
-          <properties class="SheetsQuickstart" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-=======
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Practice/src/main/java/Practice.java">
@@ -469,23 +369,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/Practice/target/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/target/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
     <entry file="file://$PROJECT_DIR$/Practice/src/main/java/Facebook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -504,9 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,15 +397,7 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Practice/src/main/java/googleSheetAPI.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-sheets/v4-rev516-1.23.0/google-api-services-sheets-v4-rev516-1.23.0.jar!/com/google/api/services/sheets/v4/SheetsScopes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -533,24 +405,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-sheets/v4-rev516-1.23.0/google-api-services-sheets-v4-rev516-1.23.0.jar!/com/google/api/services/sheets/v4/SheetsScopes.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="109" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tokens/StoredCredential">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="2628">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SpreadsheetSnippets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;field#SCOPES#0;class#SheetsQuickstart#0" />
-            <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0" />
+            <element signature="method#batchUpdate#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#getValues#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#batchGetValues#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#updateValues#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#batchUpdateValues#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#appendValues#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#pivotTables#0;class#SpreadsheetSnippets#0" />
+            <element signature="method#conditionalFormat#0;class#SpreadsheetSnippets#0" />
           </folding>
         </state>
       </provider>
-=======
-    <entry file="file://$PROJECT_DIR$/.idea/MultiDomain.iml">
-      <provider selected="true" editor-type-id="text-editor" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar!/com/google/api/client/http/javanet/NetHttpTransport.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,6 +462,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Practice/target/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/target/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
@@ -576,76 +485,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/googleSheetAPI.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="731">
           <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="57" selection-end-column="25" />
-=======
-        <state relative-caret-position="300">
-          <caret line="59" selection-start-line="44" selection-start-column="12" selection-end-line="59" />
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/target/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-=======
-        <state relative-caret-position="171">
-          <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/io/Reader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/GoogleAPI/credentials.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/GoogleAPI/client_secret.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/src/main/resources/client_secret.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="255" selection-start-line="255" selection-end-line="255" selection-end-column="7" />
+        <state relative-caret-position="146">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="43" column="106" lean-forward="true" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
+        <state relative-caret-position="182">
+          <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0;class#SheetsQuickstart#0" />
+            <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0" />
           </folding>
->>>>>>> f67ce96c5562ae3a386122fc015a3a2ca666fa54
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="4788" column="26" selection-start-line="4788" selection-start-column="26" selection-end-line="4788" selection-end-column="26" />
+          <folding>
+            <element signature="e#186747#186748#0" expanded="true" />
+            <element signature="e#186792#186793#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

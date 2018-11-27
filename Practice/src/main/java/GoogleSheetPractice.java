@@ -9,6 +9,7 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
+import com.google.api.services.sheets.v4.model.ValueRange;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,8 +39,22 @@ public class GoogleSheetPractice {
     public static void main(String[] args) throws GeneralSecurityException, IOException {
         final NetHttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
         final String spreadsheetID = "";
-        final String range = "Class Data!A2:E";
-        Sheets service = new Sheets.Builder(httpTransport, jsonFactory,getCredential())
+        final String range = "A2:E";
+        Sheets service = new Sheets.Builder(httpTransport, jsonFactory,getCredential(httpTransport)).setApplicationName(appName).build();
+        ValueRange response = service.spreadsheets().values().get(spreadsheetID, range).execute(); 
+        
+        List<List<Object>> values = response.getValues(); 
+        
+        if(values == null || values.isEmpty()){
+            System.out.println("No Data Found!");
+        }
+        else{
+            System.out.println("Name Major");
+            for(List row: values) {
+                System.out.printf("%s, %s\n", row.get(0), row.get(4));
+            }
+        }
+        
     }
 
 }
