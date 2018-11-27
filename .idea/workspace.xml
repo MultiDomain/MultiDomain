@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2864ff4d-ad32-49b3-afb8-92a387c0aefc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
     </list>
@@ -20,7 +18,7 @@
     <session id="1400467787">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="StoredCredential" value="1" />
+          <entry key="StoredCredential" value="2" />
           <entry key="class" value="1" />
           <entry key="java" value="8" />
           <entry key="xml" value="1" />
@@ -30,23 +28,23 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="8" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1466" />
+          <entry key="java" value="1476" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1466" />
+          <entry key="JAVA" value="1476" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -55,27 +53,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+            <state relative-caret-position="629">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collections.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="4788" column="26" selection-start-line="4788" selection-start-column="26" selection-end-line="4788" selection-end-column="26" />
-              <folding>
-                <element signature="e#186747#186748#0" expanded="true" />
-                <element signature="e#186792#186793#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,8 +163,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Practice/src/main/java/SpreadsheetSnippets.java" />
-        <option value="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" />
         <option value="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" />
+        <option value="$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java" />
       </list>
     </option>
   </component>
@@ -207,7 +191,13 @@
             <path>
               <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name=".credentials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiDomain" type="462c0819:PsiDirectoryNode" />
+              <item name=".credentials" type="462c0819:PsiDirectoryNode" />
+              <item name="sheets-googleapis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiDomain" type="b2602c69:ProjectViewProjectNode" />
@@ -247,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543286153684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543347952218" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -290,9 +280,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.46310833" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30635402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -324,6 +313,28 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java</url>
+          <line>40</line>
+          <properties class="SheetsQuickstart" method="getCredentials">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java</url>
+          <line>59</line>
+          <properties class="SheetsQuickstart" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Practice/src/main/java/Practice.java">
@@ -502,17 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -520,6 +520,19 @@
           <folding>
             <element signature="e#186747#186748#0" expanded="true" />
             <element signature="e#186792#186793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.credentials/sheets-googleapis/StoredCredential">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/src/main/java/SheetsQuickstart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="docComment;method#getCredentials#0;class#SheetsQuickstart#0" />
           </folding>
         </state>
       </provider>
