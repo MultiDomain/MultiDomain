@@ -65,6 +65,7 @@ public class SheetsQuickstart {
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
                 .build();
+
         ValueRange response = service.spreadsheets().values()
                 .get(spreadsheetId, range)
                 .execute();
