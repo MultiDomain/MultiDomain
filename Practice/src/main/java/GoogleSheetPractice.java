@@ -26,11 +26,10 @@ import java.util.List;
 public class GoogleSheetPractice {
 
     static JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();
-    static InputStream inputStream = GoogleSheetPractice.class.getResourceAsStream("/credentials.json");
     static FileDataStoreFactory dataStoreFactory;
     static NetHttpTransport httpTransport;
 
-    {
+    static {
         try {
             dataStoreFactory = new FileDataStoreFactory(new File(".credentials/sheets-googleapis"));
             httpTransport = GoogleNetHttpTransport.newTrustedTransport();
@@ -41,41 +40,58 @@ public class GoogleSheetPractice {
         }
     }
 
-
     public static Credential authorize(NetHttpTransport httpTransport) throws IOException, GeneralSecurityException {
         //Google client secrets
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(jsonFactory, new InputStreamReader(inputStream));
+        InputStream inputStream = GoogleSheetPractice.class.getResourceAsStream("/credentials.json");
+        InputStreamReader credincialLocation = new InputStreamReader(inputStream);
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(jsonFactory, credincialLocation);
+//        GoogleClientSecrets secrets = GoogleClientSecrets.load(JacksonFactory.getDefaultInstance(), new InputStreamReader(GoogleSheetPractice.class.getResourceAsStream("")))
+
         List<String> scopes = Arrays.asList(SheetsScopes.SPREADSHEETS);
-        GoogleAuthorizationCodeFlow authorizationCodeFlow = new GoogleAuthorizationCodeFlow.Builder(httpTransport, jsonFactory, clientSecrets, scopes).setDataStoreFactory(dataStoreFactory).setAccessType("offline").build();
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
+                httpTransport, jsonFactory, clientSecrets, scopes)
+                .setDataStoreFactory(dataStoreFactory)
+                .setAccessType("offline").build();
         LocalServerReceiver serverReceiver = new LocalServerReceiver.Builder().setPort(8888).build();
         LocalServerReceiver receiver = new LocalServerReceiver();
         // Credencial object
-        Credential credincials = new AuthorizationCodeInstalledApp(authorizationCodeFlow, receiver).authorize("user");
+        Credential credincials = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
         return credincials;
     }
 
-    private static final String ApplicationName = "Google Sheet Example";
-    public static Sheets getSheetsService() throws IOException, GeneralSecurityException {
-        Credential credential = authorize(httpTransport);
-        Sheets sheets = new Sheets.Builder(httpTransport, jsonFactory, credential).setApplicationName(ApplicationName).build();
+    public static Sheets getSheetsService(String ApplicationName) throws IOException, GeneralSecurityException {
+        Credential getCredential = authorize(httpTransport);
+        Sheets sheets = new Sheets.Builder(httpTransport, jsonFactory, getCredential).setApplicationName(ApplicationName).build();
         return sheets;
     }
+//----------------------------------Writing values to sheet ---------------------------------
+//    https://docs.google.com/spreadsheets/d/1MKR8pXipURJGeb9ZXSWVVO0JIJPK-QGQbR73DnfpYbY/edit#gid=0
     static Sheets sheetService;
-
+    static String spreadsheetID = "1MKR8pXipURJGeb9ZXSWVVO0JIJPK-QGQbR73DnfpYbY";
+    static String ApplicationName = "Google Sheet Example";
     static void setup() throws IOException, GeneralSecurityException {
-        sheetService = getSheetsService();
+        sheetService = getSheetsService(ApplicationName);
+    }
+    public static void SingleRangeWrite() throws IOException, GeneralSecurityException {
+        ValueRange range = new ValueRange().setValues(Arrays.asList(
+                Arrays.asList("Expenses January"),
+                Arrays.asList("books", "30"),
+                Arrays.asList("pens", "10"),
+                Arrays.asList("Expenses February"),
+                Arrays.asList("cloths", "20"),
+                Arrays.asList("shoes", "5")
+        ));
+        UpdateValuesResponse result = sheetService.spreadsheets().values()
+                .update(spreadsheetID, "A1", range).setValueInputOption("RAW")
+                .execute();
     }
 
-    public static void writeRead(){
-        ValueRange bodt = new ValueRange().setValues(Arrays.asList(
-                Arrays.asList("Expenses January"),
-                Arrays.asList("books","30"),
-                Arrays.asList("pens","10"),
-                Arrays.asList("Expenses February"),
-                Arrays.asList("cloths","20"),
-                Arrays.asList("shoes","5")
-        ));
-        UpdateValuesResponse result = sheetsService.spreadsheets()
+
+
+
+    public static void main(String[] args) throws IOException, GeneralSecurityException {
+        setup();
+        SingleRangeWrite();
     }
 }
 
