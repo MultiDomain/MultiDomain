@@ -10,6 +10,8 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
+import com.google.api.services.sheets.v4.model.BatchUpdateValuesRequest;
+import com.google.api.services.sheets.v4.model.BatchUpdateValuesResponse;
 import com.google.api.services.sheets.v4.model.UpdateValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
 import jdk.internal.util.xml.impl.Input;
@@ -18,7 +20,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.security.GeneralSecurityException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -64,14 +68,17 @@ public class GoogleSheetPractice {
         Sheets sheets = new Sheets.Builder(httpTransport, jsonFactory, getCredential).setApplicationName(ApplicationName).build();
         return sheets;
     }
-//----------------------------------Writing values to sheet ---------------------------------
+
+    //----------------------------------Writing values to sheet ---------------------------------
 //    https://docs.google.com/spreadsheets/d/1MKR8pXipURJGeb9ZXSWVVO0JIJPK-QGQbR73DnfpYbY/edit#gid=0
     static Sheets sheetService;
-    static String spreadsheetID = "1MKR8pXipURJGeb9ZXSWVVO0JIJPK-QGQbR73DnfpYbY";
+    static String spreadSheetID = "1MKR8pXipURJGeb9ZXSWVVO0JIJPK-QGQbR73DnfpYbY";
     static String ApplicationName = "Google Sheet Example";
+
     static void setup() throws IOException, GeneralSecurityException {
         sheetService = getSheetsService(ApplicationName);
     }
+
     public static void SingleRangeWrite() throws IOException, GeneralSecurityException {
         ValueRange range = new ValueRange().setValues(Arrays.asList(
                 Arrays.asList("Expenses January"),
@@ -82,16 +89,29 @@ public class GoogleSheetPractice {
                 Arrays.asList("shoes", "5")
         ));
         UpdateValuesResponse result = sheetService.spreadsheets().values()
-                .update(spreadsheetID, "A1", range).setValueInputOption("RAW")
+                .update(spreadSheetID, "A1", range).setValueInputOption("RAW")
                 .execute();
     }
 
-
+    public static void BatchUpdate() throws IOException {
+        List<ValueRange> data = new ArrayList<>();
+        data.add(new ValueRange().setRange("D1")
+                .setValues(Arrays.asList(
+                        Arrays.asList("Jan Total","=B2+B3"))));
+        data.add(new ValueRange().setRange("D4")
+                .setValues(Arrays.asList(
+                        Arrays.asList("Feb Total","=B5+B6"))));
+        BatchUpdateValuesRequest batchBody = new BatchUpdateValuesRequest()
+                .setValueInputOption("User_entered").setData(data);
+        BatchUpdateValuesResponse batchResult = sheetService.spreadsheets().values()
+                .batchUpdate(spreadSheetID,batchBody).execute();
+    }
 
 
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
         SingleRangeWrite();
+        BatchUpdate();
     }
 }
 
