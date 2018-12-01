@@ -10,10 +10,7 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
-import com.google.api.services.sheets.v4.model.BatchUpdateValuesRequest;
-import com.google.api.services.sheets.v4.model.BatchUpdateValuesResponse;
-import com.google.api.services.sheets.v4.model.UpdateValuesResponse;
-import com.google.api.services.sheets.v4.model.ValueRange;
+import com.google.api.services.sheets.v4.model.*;
 import jdk.internal.util.xml.impl.Input;
 
 import java.io.File;
@@ -111,14 +108,54 @@ public class    GoogleSheetPractice {
 
 //    ---------------------------------Append Data -----------------------------
 
-        public static void AppendingData (){
-        ValueRange appendBody = new ValueRange().setValues(Arrays.asList(Arrays.asList("")));
+        public static void AppendingData () throws IOException {
+            ValueRange appendBody = new ValueRange()
+                .setValues(Arrays.asList(Arrays.asList("Total","=E1+E4")));
+            AppendValuesResponse appendResult = sheetService.spreadsheets().values()
+                    .append(spreadSheetID,"A1",appendBody)
+                    .setValueInputOption("user_entered")
+                    .setInsertDataOption("insert_rows")
+                    .setIncludeValuesInResponse(true)
+                    .execute();
+
+
+//            String total = String.valueOf(appendResult.getUpdates().getUpdatedData().getValues().get(0));
+//            System.out.println(total);
         }
 
+//        -----------------------------------------Readingvalue from Sheet ---------
+    public static void ReadValuesFormSheet() throws IOException, GeneralSecurityException {
+        List<String> ranges = Arrays.asList("E1","E4");
+
+        BatchGetValuesResponse readResult = sheetService.spreadsheets()
+                .values().batchGet(spreadSheetID)
+                .setRanges(ranges).execute();
+
+        ValueRange JanTotal = readResult.getValueRanges().get(0);
+        ValueRange FebTotal = readResult.getValueRanges().get(1);
+//        ValueRange vr = sheetService.spreadsheets().values().get(spreadSheetID,"A1:F10").execute();
+        List<List<Object>> value = new Sheets.Builder(httpTransport, jsonFactory, authorize(httpTransport)).setApplicationName(ApplicationName).build().spreadsheets().values().get(spreadSheetID, "A1:F8").execute().getValues();
+
+        if (value == null || value.isEmpty()) {
+            System.out.println("No data found.");
+        } else {
+            System.out.println("Name \t Major");
+            for (List row : value) {
+                // Print columns A and E, which correspond to indices 0 and 4.
+                System.out.printf("%s \t %s\n", row.get(0), row.get(5));
+            }
+        }
+//        System.out.println(JanTotal +"\n"+ FebTotal);
+        System.out.println(JanTotal.getValues().get(0).get(0));
+        System.out.println(FebTotal.getValues().get(0).get(0));
+
+    }
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
         SingleRangeWrite();
         BatchUpdate();
+        AppendingData();
+        ReadValuesFormSheet();
     }
 }
 
