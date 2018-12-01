@@ -93,6 +93,8 @@ public class    GoogleSheetPractice {
                 .execute();
     }
 
+//    --------------------------MiltiRange Writes------------------------------
+
     public static void BatchUpdate() throws IOException {
         List<ValueRange> data = new ArrayList<>();
         data.add(new ValueRange().setRange("D1")
@@ -107,6 +109,11 @@ public class    GoogleSheetPractice {
                 .batchUpdate(spreadSheetID,batchBody).execute();
     }
 
+//    ---------------------------------Append Data -----------------------------
+
+        public static void AppendingData (){
+        ValueRange appendBody = new ValueRange().setValues(Arrays.asList(Arrays.asList("")));
+        }
 
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
