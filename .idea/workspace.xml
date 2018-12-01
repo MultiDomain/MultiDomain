@@ -4,7 +4,6 @@
     <list default="true" id="2864ff4d-ad32-49b3-afb8-92a387c0aefc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.credentials/sheets-googleapis/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/.credentials/sheets-googleapis/StoredCredential" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -35,12 +34,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4128" />
+          <entry key="java" value="4146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4128" />
+          <entry key="JAVA" value="4146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -70,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="106" column="64" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="106" selection-end-column="64" />
+            <state relative-caret-position="100">
+              <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
               <folding>
                 <element signature="method#SingleRangeWrite#0;class#GoogleSheetPractice#0" />
               </folding>
@@ -153,8 +152,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
@@ -219,7 +218,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543592518979" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543666649238" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -277,10 +276,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="676" y="0" width="697" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1429652" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2967033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -289,7 +288,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.42190015" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.42156863" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Practice/src/main/java/GoogleSheetPractice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="106" column="64" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="106" selection-end-column="64" />
+        <state relative-caret-position="100">
+          <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
           <folding>
             <element signature="method#SingleRangeWrite#0;class#GoogleSheetPractice#0" />
           </folding>
