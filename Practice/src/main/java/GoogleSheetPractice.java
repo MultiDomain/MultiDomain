@@ -53,7 +53,7 @@ public class    GoogleSheetPractice {
                 httpTransport, jsonFactory, clientSecrets, scopes)
                 .setDataStoreFactory(dataStoreFactory)
                 .setAccessType("offline").build();
-        LocalServerReceiver serverReceiver = new LocalServerReceiver.Builder().setPort(8888).build();
+//        LocalServerReceiver serverReceiver = new LocalServerReceiver.Builder().setPort(8888).build();
         LocalServerReceiver receiver = new LocalServerReceiver();
         // Credencial object
         Credential credincials = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
@@ -165,11 +165,11 @@ public class    GoogleSheetPractice {
     }
 
     public static void updatePageTitle () throws IOException {
-        UpdateSpreadsheetPropertiesRequest spreadsheetPropertiesRequest =
-                new UpdateSpreadsheetPropertiesRequest().setFields("*")
-                        .setProperties(new SpreadsheetProperties().setTitle("Expenses"));
+        UpdateSpreadsheetPropertiesRequest updateSpreadsheetRequest
+                = new UpdateSpreadsheetPropertiesRequest().setFields("*")
+                .setProperties(new SpreadsheetProperties().setTitle("Expenses"));
 
-        CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
+        CopyPasteRequest copyRequest = new CopyPasteRequest()
                 .setSource(new GridRange().setSheetId(0)
                 .setStartColumnIndex(0).setEndColumnIndex(2)
                 .setStartRowIndex(0).setEndRowIndex(1))
@@ -178,11 +178,13 @@ public class    GoogleSheetPractice {
                 .setStartRowIndex(0).setEndRowIndex(1))
                 .setPasteType("paste_values");
 
-        List<Request> requestLIst = new ArrayList<>();
+        List<Request> request = new ArrayList<>();
+        request.add(new Request()
+        .setCopyPaste(copyRequest));
+        request.add(new Request()
+        .setUpdateSpreadsheetProperties(updateSpreadsheetRequest));
 
-        requestLIst.add(new Request().setCopyPaste(copyPasteRequest));
-        requestLIst.add(new Request().setUpdateSpreadsheetProperties(spreadsheetPropertiesRequest));
-        BatchUpdateSpreadsheetRequest body = new BatchUpdateSpreadsheetRequest().setRequests(requestLIst);
+        BatchUpdateSpreadsheetRequest body = new BatchUpdateSpreadsheetRequest().setRequests(request);
 
         sheetService.spreadsheets().batchUpdate(spreadSheetID, body).execute();
 
@@ -191,13 +193,13 @@ public class    GoogleSheetPractice {
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
 
-//        SingleRangeWrite();
-//        BatchUpdate();
-//        AppendingData();
+        SingleRangeWrite();
+        BatchUpdate();
+        AppendingData();
         ReadValuesFormSheet();
 
-        NewSheet();
-        updatePageTitle();
+//        NewSheet();
+//        updatePageTitle();
     }
 }
 
