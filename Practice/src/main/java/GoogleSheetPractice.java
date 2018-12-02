@@ -62,7 +62,9 @@ public class    GoogleSheetPractice {
 
     public static Sheets getSheetsService(String ApplicationName) throws IOException, GeneralSecurityException {
         Credential getCredential = authorize(httpTransport);
-        Sheets sheets = new Sheets.Builder(httpTransport, jsonFactory, getCredential).setApplicationName(ApplicationName).build();
+        Sheets sheets = new Sheets.Builder(httpTransport, jsonFactory, getCredential)
+                .setApplicationName(ApplicationName)
+                .build();
         return sheets;
     }
 
@@ -150,12 +152,52 @@ public class    GoogleSheetPractice {
         System.out.println(FebTotal.getValues().get(0).get(0));
 
     }
+
+    public static void NewSheet () throws IOException, GeneralSecurityException {
+        Spreadsheet spreadsheet = new Spreadsheet()
+                .setProperties(new SpreadsheetProperties()
+                        .setTitle("My SpreadSheet"));
+
+        Spreadsheet result = sheetService.spreadsheets().create(spreadsheet).execute();
+
+        System.out.println(result.getSpreadsheetId());
+        System.out.println(result.getSpreadsheetUrl());
+    }
+
+    public static void updatePageTitle () throws IOException {
+        UpdateSpreadsheetPropertiesRequest spreadsheetPropertiesRequest =
+                new UpdateSpreadsheetPropertiesRequest().setFields("*")
+                        .setProperties(new SpreadsheetProperties().setTitle("Expenses"));
+
+        CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
+                .setSource(new GridRange().setSheetId(0)
+                .setStartColumnIndex(0).setEndColumnIndex(2)
+                .setStartRowIndex(0).setEndRowIndex(1))
+                .setDestination(new GridRange().setSheetId(1)
+                .setStartColumnIndex(0).setEndColumnIndex(2)
+                .setStartRowIndex(0).setEndRowIndex(1))
+                .setPasteType("paste_values");
+
+        List<Request> requestLIst = new ArrayList<>();
+
+        requestLIst.add(new Request().setCopyPaste(copyPasteRequest));
+        requestLIst.add(new Request().setUpdateSpreadsheetProperties(spreadsheetPropertiesRequest));
+        BatchUpdateSpreadsheetRequest body = new BatchUpdateSpreadsheetRequest().setRequests(requestLIst);
+
+        sheetService.spreadsheets().batchUpdate(spreadSheetID, body).execute();
+
+    }
+
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
-        SingleRangeWrite();
-        BatchUpdate();
-        AppendingData();
+
+//        SingleRangeWrite();
+//        BatchUpdate();
+//        AppendingData();
         ReadValuesFormSheet();
+
+        NewSheet();
+        updatePageTitle();
     }
 }
 
