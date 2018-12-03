@@ -10,6 +10,8 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
+import com.google.api.services.sheets.v4.model.Spreadsheet;
+import com.google.api.services.sheets.v4.model.SpreadsheetProperties;
 import org.codehaus.groovy.tools.javac.JavacCompilerFactory;
 import sun.security.krb5.internal.rcache.AuthTimeWithHash;
 
@@ -59,5 +61,24 @@ public class WorkingWithGoogleSheet {
         return sheet;
     }
 
+    static String appName = "simple Sheet";
+
+    static Sheets service() throws IOException {
+        return getSheets(appName);
+    }
+
+    public static void createSheet(String title) throws IOException {
+        Spreadsheet spreadsheet = new Spreadsheet()
+                .setProperties(new SpreadsheetProperties()
+                        .setTitle(title));
+        spreadsheet = service().spreadsheets().create(spreadsheet)
+                .setFields("spreadsheetId").execute();
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        service();
+        createSheet("Created using java");
+    }
 
 }
