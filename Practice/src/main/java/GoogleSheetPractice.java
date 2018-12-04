@@ -208,6 +208,14 @@ public class GoogleSheetPractice {
                 .setAddSheet(new AddSheetRequest()
                         .setProperties(new SheetProperties()
                                 .setSheetId(1).setTitle("expense"))));
+
+//        Rename sheet
+
+        requests.add(new Request()
+        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
+        .setProperties(new SheetProperties()
+        .gpmasetSheetId().));
+
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
                 .setFind("Total").setReplacement("New Total")
