@@ -188,7 +188,7 @@ public class GoogleSheetPractice {
                         .setTitle("My SpreadSheet"));
 
         Spreadsheet result = sheetService.spreadsheets().create(spreadsheet).execute();
-        System.out.println(result.getSpreadsheetId());
+                System.out.println(result.getSpreadsheetId());
         System.out.println(result.getSpreadsheetUrl());
     }
 
@@ -208,12 +208,6 @@ public class GoogleSheetPractice {
                 .setAddSheet(new AddSheetRequest()
                         .setProperties(new SheetProperties()
                                 .setSheetId(1).setTitle("expense"))));
-
-        requests.add(new Request()
-                .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
-                        .setProperties(new SheetProperties().setSheetId(1).setTitle("Income"))
-                        .setFields("title")));
-
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
                 .setFind("Total").setReplacement("New Total")
