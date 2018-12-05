@@ -213,8 +213,7 @@ public class GoogleSheetPractice {
 
         requests.add(new Request()
         .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
-        .setProperties(new SheetProperties()
-        .gpmasetSheetId().));
+        .setProperties(new SheetProperties().setSheetId(1).setTitle("Random")));
 
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
