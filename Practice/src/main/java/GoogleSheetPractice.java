@@ -224,10 +224,10 @@ public class GoogleSheetPractice {
         CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
                 .setSource(new GridRange().setSheetId(0)
                         .setStartColumnIndex(0).setEndColumnIndex(5)
-                        .setStartRowIndex(0).setEndRowIndex(4))
-                .setDestination(new GridRange().setSheetId(0)
-                        .setStartColumnIndex(4).setEndColumnIndex(9)
-                        .setStartRowIndex(4).setEndRowIndex(8))
+                        .setStartRowIndex(0).setEndRowIndex(10))
+                .setDestination(new GridRange().setSheetId(1)
+                        .setStartColumnIndex(0).setEndColumnIndex(5)
+                        .setStartRowIndex(0).setEndRowIndex(10))
                 .setPasteType("paste_values");
         requests.add(new Request().setCopyPaste(copyPasteRequest));
 
