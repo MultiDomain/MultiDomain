@@ -188,7 +188,7 @@ public class GoogleSheetPractice {
                         .setTitle("My SpreadSheet"));
 
         Spreadsheet result = sheetService.spreadsheets().create(spreadsheet).execute();
-                System.out.println(result.getSpreadsheetId());
+        System.out.println(result.getSpreadsheetId());
         System.out.println(result.getSpreadsheetUrl());
     }
 
@@ -209,16 +209,16 @@ public class GoogleSheetPractice {
                         .setProperties(new SheetProperties()
                                 .setSheetId(1).setTitle("expense"))));
 
-//        Rename sheet
-
-        requests.add(new Request()
-        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
-        .setProperties(new SheetProperties().setSheetId(1).setTitle("Random")));
-
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
                 .setFind("Total").setReplacement("New Total")
                 .setAllSheets(true)));
+
+
+//        Rename sheet
+
+        requests.add(new Request()
+                .setUpdateSheetProperties(new UpdateSheetPropertiesRequest().setProperties(new SheetProperties().setSheetId(1).setTitle("title")).setFields("title")));
 
 //        copy paste
         CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
