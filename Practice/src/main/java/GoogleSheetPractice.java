@@ -11,8 +11,6 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.*;
-import com.mysql.cj.x.protobuf.MysqlxCrud;
-import jdk.internal.util.xml.impl.Input;
 
 import java.io.File;
 import java.io.IOException;
@@ -211,10 +209,10 @@ public class GoogleSheetPractice {
 
 //        Rename sheet
 
-        requests.add(new Request()
-        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
-        .setProperties(new SheetProperties()
-        .gpmasetSheetId().));
+//        requests.add(new Request()
+//        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
+//        .setProperties(new SheetProperties()
+//        .gpmasetSheetId().));
 
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
