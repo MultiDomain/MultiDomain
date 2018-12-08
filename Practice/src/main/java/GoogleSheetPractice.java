@@ -209,10 +209,10 @@ public class GoogleSheetPractice {
 
 //        Rename sheet
 
-//        requests.add(new Request()
-//        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
-//        .setProperties(new SheetProperties()
-//        .gpmasetSheetId().));
+        requests.add(new Request()
+        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
+        .setProperties(new SheetProperties()
+        .setTitle("My test")).setFields("title")));
 
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
