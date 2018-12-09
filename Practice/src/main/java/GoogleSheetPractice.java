@@ -178,7 +178,7 @@ public class GoogleSheetPractice {
         }
     }
 
-//    --------------------------------------------------New Sheet------------------------
+//    --------------------------------------------------New Spreadsheet------------------------
 
     public static void NewSheet() throws IOException, GeneralSecurityException {
         Spreadsheet spreadsheet = new Spreadsheet()
@@ -186,8 +186,9 @@ public class GoogleSheetPractice {
                         .setTitle("My SpreadSheet"));
 
         Spreadsheet result = sheetService.spreadsheets().create(spreadsheet).execute();
-                System.out.println(result.getSpreadsheetId());
+        System.out.println(result.getSpreadsheetId());
         System.out.println(result.getSpreadsheetUrl());
+
     }
 
 //    -----------------------------------------update - change Sheet Name-------------------
@@ -210,9 +211,9 @@ public class GoogleSheetPractice {
 //        Rename sheet
 
         requests.add(new Request()
-        .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
-        .setProperties(new SheetProperties()
-        .setTitle("My test")).setFields("title")));
+                .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
+                        .setProperties(new SheetProperties().setSheetId(1)
+                                .setTitle("Hello")).setFields("title")));
 
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
@@ -224,7 +225,7 @@ public class GoogleSheetPractice {
                 .setSource(new GridRange().setSheetId(0)
                         .setStartColumnIndex(0).setEndColumnIndex(5)
                         .setStartRowIndex(0).setEndRowIndex(4))
-                .setDestination(new GridRange().setSheetId(0)
+                .setDestination(new GridRange().setSheetId(1)
                         .setStartColumnIndex(4).setEndColumnIndex(9)
                         .setStartRowIndex(4).setEndRowIndex(8))
                 .setPasteType("paste_values");
@@ -238,20 +239,31 @@ public class GoogleSheetPractice {
                 .get(1).getFindReplace();
     }
 
-//    -----------------------------------------Find and repalce - --------------
+//    -----------------------------------------spreadsheet name --------------
+
+    public static void getSpreadsheetName() throws IOException {
+
+        Spreadsheet spreadsheet = sheetService.spreadsheets().get(spreadSheetID).setIncludeGridData(false).execute();
+
+        System.out.println(spreadsheet.getProperties().getTitle());
+        System.out.println(spreadsheet.getSheets().get(0).getProperties().getTitle());
+        System.out.println(spreadsheet.getSheets().size());
+    }
 
     //----------------------------------------implement-------------------------------
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
 
-        SingleRangeWrite();
-        BatchUpdate();
-        AppendingData();
-
-        readingMultiRange();
-        readInRange();
+//        SingleRangeWrite();
+//        BatchUpdate();
+//        AppendingData();
+//
+//        readingMultiRange();
+//        readInRange();
 
 //        NewSheet();
+
+//        getSpreadsheetName();
 
         UpdatingSheet();
     }
