@@ -1,7 +1,5 @@
 package DesignPatterns;
 
-import MentoringPractice.B;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -116,9 +114,10 @@ class Meal {
     }
     public void showItem(){
         for(item item: items){
-            System.out.print("Item: "+item.name());
+            System.out.print(" Item: "+item.name());
             System.out.print(", packing: "+item.packing().pack());
             System.out.print(", price: "+item.price());
+            System.out.println();
         }
     }
 }
