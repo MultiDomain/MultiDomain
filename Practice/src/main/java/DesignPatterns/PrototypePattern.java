@@ -81,11 +81,6 @@ class Circle extends shape{
 class ShapeCache{
     private static Hashtable<String,shape> shapeMap = new Hashtable<>();
 
-    public static shape getShape(String shapeId){
-        shape cachedShape = shapeMap.get(shapeId);
-        return (shape) cachedShape.clone();
-    }
-
     public static void loadCache(){
         Circle circle  = new Circle();
         circle.setId("1");
@@ -99,5 +94,11 @@ class ShapeCache{
         rectangle.setId("3");
         shapeMap.put(rectangle.getId(),rectangle);
     }
+
+    public static shape getShape(String shapeId){
+        shape cachedShape = shapeMap.get(shapeId);
+        return (shape) cachedShape.clone();
+    }
+
 }
 

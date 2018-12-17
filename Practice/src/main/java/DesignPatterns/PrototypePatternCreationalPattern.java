@@ -2,30 +2,30 @@ package DesignPatterns;
 
 public class PrototypePatternCreationalPattern {
     public static void main(String[] args) {
-        CloneFactory animalMaker = new CloneFactory();
-        Sheep sally  = new Sheep();
+        CloneFactory animalMaker = new CloneFactory(); // create object of CloneFactory
+        Sheep sally = new Sheep(); // Create Object of Sheep
         Sheep cloneSheep = (Sheep) animalMaker.getClone(sally);
 
         System.out.println(sally);
         System.out.println(cloneSheep);
-        System.out.println("Sally Hashcode:"+System.identityHashCode(System.identityHashCode(sally)));
-        System.out.println("Clone Sheep:"+ System.identityHashCode(System.identityHashCode(cloneSheep)));
+        System.out.println("Sally Hashcode:" + System.identityHashCode(System.identityHashCode(sally)));
+        System.out.println("Clone Sheep:" + System.identityHashCode(System.identityHashCode(cloneSheep)));
     }
 }
 
-interface Animal extends Cloneable{
+interface Animal extends Cloneable {
 
-    public Animal makeCopy();
+    public Animal makeCopy(); // Methods Type Animal
 
 }
 
-class Sheep implements Animal{
+class Sheep implements Animal {
 
-    public Sheep(){
+    public Sheep() {
         System.out.println("Sheep Created");
     }
 
-    public Animal makeCopy(){
+    public Animal makeCopy() {
 
         System.out.println("Sheep is being cloned");
 
@@ -41,13 +41,13 @@ class Sheep implements Animal{
         return sheepObj;
     }
 
-    public String toString(){
+    public String toString() {
         return "The Sheep looks Good!";
     }
 }
 
 class CloneFactory {
-    public Animal getClone(Animal AnimalSample){
+    public Animal getClone(Animal AnimalSample) {
         return AnimalSample.makeCopy();
     }
 }
