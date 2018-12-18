@@ -1,14 +1,13 @@
 package DesignPatterns;
 
 
-import java.awt.*;
 import java.util.Hashtable;
 
 public class PrototypePattern {
     public static void main(String[] args) {
-        ShapeCache.loadCache();
+        ShapeCache.loadCache(); // calls the method and saves the object as a key-value pair in the HashMap
 
-        shape clonedShape1 = (shape) ShapeCache.getShape("1");
+        shape clonedShape1 = (shape) ShapeCache.getShape("1"); //
         System.out.println("Shape : "+clonedShape1.getType());
 
         shape clonedShape2 = (shape)ShapeCache.getShape("2");
