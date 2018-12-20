@@ -1,19 +1,11 @@
 package DesignPatterns.CreationPattern;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
-//------------------------------Step 2----------------------------
-interface Criteria {
-    public List<Person> meetCriteria(List<Person> persons);
-}
-
 //------------------------------Step 1----------------------------
 class Person {
-    private String name;
-    private String gender;
-    private String maritalStatus;
+    private String name, gender, maritalStatus;
 
     public Person(String name, String gender, String maritalStatus) {
         this.name = name;
@@ -34,13 +26,18 @@ class Person {
     }
 }
 
+//------------------------------Step 2----------------------------
+interface Criteria {
+    public List<Person> meetCriteria(List<Person> personList);
+}
+
 //------------------------------Step 3----------------------------
 class CriteriaMale implements Criteria {
 
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
+    public List<Person> meetCriteria(List<Person> personList) {
         List<Person> malePerson = new ArrayList<Person>();
-        for (Person person : persons) {
+        for (Person person : personList) {
             if (person.getGender().equalsIgnoreCase("male")) {
                 malePerson.add(person);
             }
@@ -52,9 +49,9 @@ class CriteriaMale implements Criteria {
 class CriteriaFemale implements Criteria {
 
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
+    public List<Person> meetCriteria(List<Person> personList) {
         List<Person> femalePerson = new ArrayList<Person>();
-        for (Person person : persons) {
+        for (Person person : personList) {
             if (person.getGender().equalsIgnoreCase("female")) {
                 femalePerson.add(person);
             }
@@ -66,9 +63,9 @@ class CriteriaFemale implements Criteria {
 class CriteriaSingle implements Criteria {
 
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
+    public List<Person> meetCriteria(List<Person> personList) {
         List<Person> singlePerson = new ArrayList<Person>();
-        for (Person person : persons) {
+        for (Person person : personList) {
             if (person.getMaritalStatus().equalsIgnoreCase("single")) {
                 singlePerson.add(person);
             }
@@ -88,8 +85,8 @@ class AndCriteria implements Criteria {
 
 
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
-        List<Person> firstcriteriaPersons = criteria.meetCriteria(persons);
+    public List<Person> meetCriteria(List<Person> personList) {
+        List<Person> firstcriteriaPersons = criteria.meetCriteria(personList);
         return otherCriteria.meetCriteria(firstcriteriaPersons);
     }
 }
@@ -104,9 +101,9 @@ class OrCriteria implements Criteria {
     }
 
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
-        List<Person> firstCriteriaItem = criteria.meetCriteria(persons);
-        List<Person> otherCriteriaItem = criteria.meetCriteria(persons);
+    public List<Person> meetCriteria(List<Person> personList) {
+        List<Person> firstCriteriaItem = criteria.meetCriteria(personList);
+        List<Person> otherCriteriaItem = criteria.meetCriteria(personList);
 
         for (Person person : otherCriteriaItem) {
             if (!firstCriteriaItem.contains(person)) {
