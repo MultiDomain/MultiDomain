@@ -1,5 +1,18 @@
 package DesignPatterns;
 
+
+
+public class AdapterPattern {
+    //-----------------------Step 5----------------------
+
+    public static void main(String[] args) {
+        AudioPlayer audioPlayer = new AudioPlayer();
+        audioPlayer.play("mp3", "beyond the horizon.mp3");
+        audioPlayer.play("mp4", "alone.mp4");
+        audioPlayer.play("vlc", "far far away.vlc");
+        audioPlayer.play("avi", "mind me.avi");
+    }
+}
 //-----------------------Step 1----------------------
 interface MediaPlayer {
     void play(String audioType, String filename);
@@ -10,19 +23,6 @@ interface AdvancedMediaPlayer {
 
     void playMP4(String filename);
 }
-
-public class AdapterPattern {
-    //-----------------------Step 6----------------------
-
-    public static void main(String[] args) {
-        AudioPlayer audioPlayer = new AudioPlayer();
-        audioPlayer.play("mp3", "beyond the horizon.mp3");
-        audioPlayer.play("mp4", "alone.mp4");
-        audioPlayer.play("vlc", "far far away.vlc");
-        audioPlayer.play("avi", "mind me.avi");
-    }
-}
-
 //-----------------------Step 2----------------------
 class VLCPlayer implements AdvancedMediaPlayer {
 
@@ -76,7 +76,6 @@ class MediaAdapter implements MediaPlayer {
 
 class AudioPlayer implements MediaPlayer {
     MediaAdapter mediaAdapter;
-
 
     @Override
     public void play(String audioType, String filename) {
