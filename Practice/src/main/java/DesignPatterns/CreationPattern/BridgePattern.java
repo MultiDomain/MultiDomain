@@ -1,4 +1,4 @@
-package DesignPatterns;
+package DesignPatterns.CreationPattern;
 
 //-------------------------------step 1---------------------------------
 interface DrawAPI {

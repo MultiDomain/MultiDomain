@@ -1,4 +1,4 @@
-package DesignPatterns;
+package DesignPatterns.CreationPattern;
 
 
 import java.util.Hashtable;
