@@ -8,32 +8,34 @@ public class HeadlessChromeOptions {
 
         WebDriver driver = null;
 
+
+        String os = System.getProperty("os.name").toLowerCase();
+
+        if (os.contains("mac")) {
+            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Mac/chromedriver");
+        } else if (os.contains("windows")) {
+            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Windows/chromedriver.exe");
+        } else {
+            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Linux/chromedriver");
+        }
+
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("window-size=400,1000");
         chromeOptions.addArguments("headless");
 
-        String os = System.getProperty("os.name").toLowerCase();
-
-        if(os.contains("mac")){
-            System.setProperty("webdriver.chrome.driver","Generic/Drivers/Mac/chromedriver");
-        }else if(os.contains("windows")){
-            System.setProperty("webdriver.chrome.driver","Generic/Drivers/Windows/chromedriver.exe");
-        }else{
-            System.setProperty("webdriver.chrome.driver","Generic/Drivers/Linux/chromedriver");
-        }
-
         driver = new ChromeDriver(chromeOptions);
         String url = "http://www.yahoo.com";
-        try{
+        try {
             driver.get(url);
 
             System.out.println(driver.getTitle());
 
-        }catch (Exception e){
+        } catch (Exception e) {
 
-        }finally {
+        } finally {
             driver.manage().deleteAllCookies();
             driver.close();
+
             driver.quit();
         }
     }
