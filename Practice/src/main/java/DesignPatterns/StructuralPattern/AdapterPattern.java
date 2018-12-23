@@ -1,4 +1,4 @@
-package DesignPatterns.CreationPattern;
+package DesignPatterns.StructuralPattern;
 
 
 
