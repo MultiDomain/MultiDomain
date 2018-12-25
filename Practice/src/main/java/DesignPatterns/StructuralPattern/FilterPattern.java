@@ -1,4 +1,4 @@
-package DesignPatterns.CreationPattern;
+package DesignPatterns.StructuralPattern;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +80,7 @@ class AndCriteria implements Criteria {
 
     public AndCriteria(Criteria criteria, Criteria otherCriteria) {
         this.criteria = criteria;
-        this.otherCriteria = criteria;
+        this.otherCriteria = otherCriteria;
     }
 
 
@@ -134,11 +134,14 @@ public class FilterPattern {
 
         System.out.println("\nMale: ");
         printPerson(male.meetCriteria(persons));
+
         System.out.println("\nFemale: ");
         printPerson(female.meetCriteria(persons));
+
         System.out.println("\nSingle Male: ");
         printPerson(singleMale.meetCriteria(persons));
-        System.out.println("\nSingle Female: ");
+
+        System.out.println("\nSingle Or Female: ");
         printPerson(singleFemale.meetCriteria(persons));
 
     }
@@ -146,7 +149,7 @@ public class FilterPattern {
     public static void printPerson(List<Person> persons) {
         for (Person person : persons) {
 
-            System.out.println("Person: " + person.getName() + " Gender" + person.getGender() + " Marital Status" + person.getMaritalStatus());
+            System.out.println("Person: " + person.getName() + " Gender: " + person.getGender() + " Marital Status: " + person.getMaritalStatus());
         }
     }
 }
