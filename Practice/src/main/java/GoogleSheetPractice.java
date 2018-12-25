@@ -11,8 +11,11 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.*;
+<<<<<<< HEAD
 import com.mysql.cj.x.protobuf.MysqlxCrud;
 import jdk.internal.util.xml.impl.Input;
+=======
+>>>>>>> parent of cc057fa... update
 
 import java.io.File;
 import java.io.IOException;
@@ -180,7 +183,11 @@ public class GoogleSheetPractice {
         }
     }
 
+<<<<<<< HEAD
 //    --------------------------------------------------New Sheet------------------------
+=======
+//    --------------------------------------------------New Spreadsheet------------------------
+>>>>>>> parent of cc057fa... update
 
     public static void NewSheet() throws IOException, GeneralSecurityException {
         Spreadsheet spreadsheet = new Spreadsheet()
@@ -190,6 +197,10 @@ public class GoogleSheetPractice {
         Spreadsheet result = sheetService.spreadsheets().create(spreadsheet).execute();
         System.out.println(result.getSpreadsheetId());
         System.out.println(result.getSpreadsheetUrl());
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of cc057fa... update
     }
 
 //    -----------------------------------------update - change Sheet Name-------------------
@@ -209,23 +220,40 @@ public class GoogleSheetPractice {
                         .setProperties(new SheetProperties()
                                 .setSheetId(1).setTitle("expense"))));
 
+<<<<<<< HEAD
+=======
+//        Rename sheet
+
+        requests.add(new Request()
+                .setUpdateSheetProperties(new UpdateSheetPropertiesRequest()
+                        .setProperties(new SheetProperties().setSheetId(1)
+                                .setTitle("Hello")).setFields("title")));
+
+>>>>>>> parent of cc057fa... update
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
                 .setFind("Total").setReplacement("New Total")
                 .setAllSheets(true)));
 
+<<<<<<< HEAD
 
 //        Rename sheet
 
         requests.add(new Request()
                 .setUpdateSheetProperties(new UpdateSheetPropertiesRequest().setProperties(new SheetProperties().setSheetId(1).setTitle("title")).setFields("title")));
 
+=======
+>>>>>>> parent of cc057fa... update
 //        copy paste
         CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
                 .setSource(new GridRange().setSheetId(0)
                         .setStartColumnIndex(0).setEndColumnIndex(5)
                         .setStartRowIndex(0).setEndRowIndex(4))
+<<<<<<< HEAD
                 .setDestination(new GridRange().setSheetId(0)
+=======
+                .setDestination(new GridRange().setSheetId(1)
+>>>>>>> parent of cc057fa... update
                         .setStartColumnIndex(4).setEndColumnIndex(9)
                         .setStartRowIndex(4).setEndRowIndex(8))
                 .setPasteType("paste_values");
@@ -239,12 +267,26 @@ public class GoogleSheetPractice {
                 .get(1).getFindReplace();
     }
 
+<<<<<<< HEAD
 //    -----------------------------------------Find and repalce - --------------
+=======
+//    -----------------------------------------spreadsheet name --------------
+
+    public static void getSpreadsheetName() throws IOException {
+
+        Spreadsheet spreadsheet = sheetService.spreadsheets().get(spreadSheetID).setIncludeGridData(false).execute();
+
+        System.out.println(spreadsheet.getProperties().getTitle());
+        System.out.println(spreadsheet.getSheets().get(0).getProperties().getTitle());
+        System.out.println(spreadsheet.getSheets().size());
+    }
+>>>>>>> parent of cc057fa... update
 
     //----------------------------------------implement-------------------------------
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
 
+<<<<<<< HEAD
         SingleRangeWrite();
         BatchUpdate();
         AppendingData();
@@ -254,6 +296,19 @@ public class GoogleSheetPractice {
 
 //        NewSheet();
 
+=======
+//        SingleRangeWrite();
+//        BatchUpdate();
+//        AppendingData();
+//
+//        readingMultiRange();
+//        readInRange();
+
+//        NewSheet();
+
+//        getSpreadsheetName();
+
+>>>>>>> parent of cc057fa... update
         UpdatingSheet();
     }
 }
