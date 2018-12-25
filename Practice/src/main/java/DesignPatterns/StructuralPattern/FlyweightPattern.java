@@ -7,7 +7,11 @@ interface Shapes{
 }
 
 class Circles implements Shapes{
+private  String color;
+private int x, y, radius;
+public Circles(String color){
 
+}
     @Override
     public void draw() {
 
