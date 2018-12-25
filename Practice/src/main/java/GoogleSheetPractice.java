@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //import com.google.api.client.auth.oauth2.Credential;
 //import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 //import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -277,6 +278,8 @@
 >>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
+=======
+>>>>>>> parent of cc057fa... update
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -292,8 +295,11 @@ import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.*;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.mysql.cj.x.protobuf.MysqlxCrud;
 import jdk.internal.util.xml.impl.Input;
+=======
+>>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
 =======
@@ -467,7 +473,11 @@ public class GoogleSheetPractice {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    --------------------------------------------------New Sheet------------------------
+=======
+//    --------------------------------------------------New Spreadsheet------------------------
+>>>>>>> parent of cc057fa... update
 =======
 //    --------------------------------------------------New Spreadsheet------------------------
 >>>>>>> parent of cc057fa... update
@@ -485,6 +495,10 @@ public class GoogleSheetPractice {
         System.out.println(result.getSpreadsheetUrl());
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of cc057fa... update
 =======
 
 >>>>>>> parent of cc057fa... update
@@ -512,7 +526,10 @@ public class GoogleSheetPractice {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
 //        Rename sheet
@@ -523,6 +540,9 @@ public class GoogleSheetPractice {
                                 .setTitle("Hello")).setFields("title")));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
@@ -531,6 +551,7 @@ public class GoogleSheetPractice {
                 .setFind("Total").setReplacement("New Total")
                 .setAllSheets(true)));
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -543,10 +564,13 @@ public class GoogleSheetPractice {
 >>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
+=======
+>>>>>>> parent of cc057fa... update
 //        copy paste
         CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
                 .setSource(new GridRange().setSheetId(0)
                         .setStartColumnIndex(0).setEndColumnIndex(5)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         .setStartRowIndex(0).setEndRowIndex(10))
@@ -556,11 +580,16 @@ public class GoogleSheetPractice {
 =======
 =======
 >>>>>>> parent of cc057fa... update
+=======
+>>>>>>> parent of cc057fa... update
                         .setStartRowIndex(0).setEndRowIndex(4))
                 .setDestination(new GridRange().setSheetId(1)
                         .setStartColumnIndex(4).setEndColumnIndex(9)
                         .setStartRowIndex(4).setEndRowIndex(8))
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
@@ -577,8 +606,11 @@ public class GoogleSheetPractice {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    -----------------------------------------Find and repalce - --------------
 =======
+=======
+>>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
 //    -----------------------------------------spreadsheet name --------------
@@ -592,6 +624,9 @@ public class GoogleSheetPractice {
         System.out.println(spreadsheet.getSheets().size());
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
@@ -600,6 +635,7 @@ public class GoogleSheetPractice {
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         SingleRangeWrite();
@@ -614,6 +650,8 @@ public class GoogleSheetPractice {
 =======
 =======
 >>>>>>> parent of cc057fa... update
+=======
+>>>>>>> parent of cc057fa... update
 //        SingleRangeWrite();
 //        BatchUpdate();
 //        AppendingData();
@@ -626,6 +664,9 @@ public class GoogleSheetPractice {
 //        getSpreadsheetName();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
@@ -635,7 +676,10 @@ public class GoogleSheetPractice {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> remotes/origin/mwp
+=======
+>>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
 =======
