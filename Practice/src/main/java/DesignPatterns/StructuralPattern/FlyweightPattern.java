@@ -9,7 +9,7 @@ interface Shapes {
 class Circles implements Shapes {
 
     private String color;
-    private int x, y, radius;   
+    private int x, y, radius;
 
     public Circles(String color) {
         this.color = color;
