@@ -12,8 +12,11 @@ import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.*;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.mysql.cj.x.protobuf.MysqlxCrud;
 import jdk.internal.util.xml.impl.Input;
+=======
+>>>>>>> parent of cc057fa... update
 =======
 >>>>>>> parent of cc057fa... update
 
@@ -184,7 +187,11 @@ public class GoogleSheetPractice {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    --------------------------------------------------New Sheet------------------------
+=======
+//    --------------------------------------------------New Spreadsheet------------------------
+>>>>>>> parent of cc057fa... update
 =======
 //    --------------------------------------------------New Spreadsheet------------------------
 >>>>>>> parent of cc057fa... update
@@ -198,6 +205,10 @@ public class GoogleSheetPractice {
         System.out.println(result.getSpreadsheetId());
         System.out.println(result.getSpreadsheetUrl());
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of cc057fa... update
 =======
 
 >>>>>>> parent of cc057fa... update
@@ -221,7 +232,10 @@ public class GoogleSheetPractice {
                                 .setSheetId(1).setTitle("expense"))));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of cc057fa... update
 //        Rename sheet
 
         requests.add(new Request()
@@ -229,12 +243,16 @@ public class GoogleSheetPractice {
                         .setProperties(new SheetProperties().setSheetId(1)
                                 .setTitle("Hello")).setFields("title")));
 
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
 //        Rename Field
         requests.add(new Request().setFindReplace(new FindReplaceRequest()
                 .setFind("Total").setReplacement("New Total")
                 .setAllSheets(true)));
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 //        Rename sheet
@@ -244,13 +262,19 @@ public class GoogleSheetPractice {
 
 =======
 >>>>>>> parent of cc057fa... update
+=======
+>>>>>>> parent of cc057fa... update
 //        copy paste
         CopyPasteRequest copyPasteRequest = new CopyPasteRequest()
                 .setSource(new GridRange().setSheetId(0)
                         .setStartColumnIndex(0).setEndColumnIndex(5)
                         .setStartRowIndex(0).setEndRowIndex(4))
 <<<<<<< HEAD
+<<<<<<< HEAD
                 .setDestination(new GridRange().setSheetId(0)
+=======
+                .setDestination(new GridRange().setSheetId(1)
+>>>>>>> parent of cc057fa... update
 =======
                 .setDestination(new GridRange().setSheetId(1)
 >>>>>>> parent of cc057fa... update
@@ -268,8 +292,11 @@ public class GoogleSheetPractice {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    -----------------------------------------Find and repalce - --------------
 =======
+=======
+>>>>>>> parent of cc057fa... update
 //    -----------------------------------------spreadsheet name --------------
 
     public static void getSpreadsheetName() throws IOException {
@@ -280,12 +307,16 @@ public class GoogleSheetPractice {
         System.out.println(spreadsheet.getSheets().get(0).getProperties().getTitle());
         System.out.println(spreadsheet.getSheets().size());
     }
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
 
     //----------------------------------------implement-------------------------------
     public static void main(String[] args) throws IOException, GeneralSecurityException {
         setup();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         SingleRangeWrite();
         BatchUpdate();
@@ -297,6 +328,8 @@ public class GoogleSheetPractice {
 //        NewSheet();
 
 =======
+=======
+>>>>>>> parent of cc057fa... update
 //        SingleRangeWrite();
 //        BatchUpdate();
 //        AppendingData();
@@ -308,6 +341,9 @@ public class GoogleSheetPractice {
 
 //        getSpreadsheetName();
 
+<<<<<<< HEAD
+>>>>>>> parent of cc057fa... update
+=======
 >>>>>>> parent of cc057fa... update
         UpdatingSheet();
     }
