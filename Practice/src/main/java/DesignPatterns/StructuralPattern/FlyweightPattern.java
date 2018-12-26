@@ -44,29 +44,28 @@ class ShapeFactory {
             circleMap.put(color, circles);
             System.out.println("creating circle of color: " + color);
         }
-
         return circles;
     }
 }
 
 public class FlyweightPattern {
 
-    private static final String colors [] = {"Red","Green", "Blue","White", "Bllack"};
+    private static final String colors[] = {"Red", "Green", "Blue", "White", "Bllack"};
 
-    private static String getRandomColor(){
-        return colors[(int)Math.random()*colors.length];
+    private static String getRandomColor() {
+        return colors[(int) Math.random() * colors.length];
     }
 
-    private static int getRandomX(){
-        return (int)(Math.random()*100);
+    private static int getRandomX() {
+        return (int) (Math.random() * 100);
     }
 
-    private static int getRandomY(){
-        return (int)(Math.random()*100);
+    private static int getRandomY() {
+        return (int) (Math.random() * 100);
     }
 
     public static void main(String[] args) {
-        for(int i = 0;  i <20; i++){
+        for (int i = 0; i < 20; i++) {
             Circles circles = (Circles) ShapeFactory.getCircles(getRandomColor());
             circles.setX(getRandomX());
             circles.setY(getRandomY());
