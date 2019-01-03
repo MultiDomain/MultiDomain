@@ -7,6 +7,7 @@ interface Order {
     void execute();
 }
 
+//--------------------- Request Class---------------------
 class Stock {
     private String name = "abc";
     private int quantity = 10;
@@ -44,6 +45,7 @@ class SellStock implements Order{
     }
 }
 
+//----------------------------------
 class Broker{
     private List<Order> orderlist = new ArrayList<>();
     public void takeOrder (Order order){
