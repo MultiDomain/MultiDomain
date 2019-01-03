@@ -1,8 +1,6 @@
-.idea/usage.statistics.xml
-.idea/tasks.xml
-.idea/modules.xml
 .idea/workspace.xml
-.idea/vcs.xml
-gradle.xml
 .idea/libraries
+.idea/workspace.xml~master
 ../target
+Generic/target
+Practice/target/
