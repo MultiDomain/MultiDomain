@@ -1,6 +1,5 @@
 package DesignPatterns.BehaviouralPattern;
 
-import org.apache.commons.collections4.functors.OnePredicate;
 
 interface ElectronicDevice {
     public void on();
