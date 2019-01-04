@@ -1,10 +1,5 @@
 package DesignPatterns.BehaviouralPattern;
 
-import com.mysql.cj.x.protobuf.MysqlxExpr;
-import org.apache.xpath.operations.And;
-
-import javax.smartcardio.TerminalFactory;
-
 interface Expression{
     public boolean interpret(String context);
 }
@@ -74,5 +69,12 @@ public class InterpreterPattern {
         return new AndExpression(julie,married);
     }
 
+    public static void main(String[] args) {
+        Expression isMale = getMaleExpression();
+        Expression isMarriedWoman = getMarriedWomanExpression();
+
+        System.out.println("Is John a man? "+isMale.interpret("John"));
+        System.out.println("Is Julie Married? "+ isMarriedWoman.interpret("Married Julie"));
+    }
 
 }
