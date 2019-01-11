@@ -75,6 +75,7 @@ public class InterpreterPattern {
 
         System.out.println("Is John a man? "+isMale.interpret("John"));
         System.out.println("Is Julie Married? "+ isMarriedWoman.interpret("Married Julie"));
+        
     }
 
 }
