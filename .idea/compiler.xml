@@ -10,5 +10,10 @@
         <module name="Practice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Generic" target="1.8" />
+      <module name="MultiDomain" target="1.8" />
+      <module name="Practice" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
