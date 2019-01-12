@@ -9,7 +9,7 @@ public class Practice {
         String os = System.getProperty("os.name").toLowerCase();
 
         if (os.contains("mac")) {
-            System.setProperty("webdriver.chrome.driver", "Generic/Driver/Mac/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "Generic/Drivers/Mac/chromedriver");
         } else if (os.contains("windows")) {
             System.setProperty("webdriver.chrome.driver", "Generic/Driver/Windows/chromedriver.exe");
         } else {
